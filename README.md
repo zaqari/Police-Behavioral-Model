@@ -1,4 +1,4 @@
-# PoliceReform-BehavioralModel
+# A Behavioral Model of Police Interactions with Communities
 ## Project Description
 The following is the R code and JAGS scripts for a Bayesian Cognitve model analyzing the rate of use of force, or incarcerations made by police officers within communities. Note: the data used is just toy, fabricated data to show how the model might work. If you intend to use this model legitimately, you'll need to supply your own data--I'll walk through how the data should be structured to seemlessly use these scripts in the first section below.  
 
