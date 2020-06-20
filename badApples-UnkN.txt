@@ -1,0 +1,20 @@
+# Inferring a Rate
+model{
+  #per person priors
+  for (cop in 1:PD){
+    for (com in 1:CITY){
+      N[cop,com] ~ dcat(p[cop,com,])
+      for (i in 1:nmax){
+        p[cop,com,i] <-1/nmax
+      }
+      
+      #rate of violent arrests
+      theta[com,cop] ~ dunif(0,1)
+
+      #prior on number of violent arrests
+      y[cop,com] ~ dbin(theta[com,cop], N[cop, com])
+    }
+    
+  }
+  
+}

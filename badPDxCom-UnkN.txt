@@ -1,0 +1,21 @@
+# Inferring a Rate
+model{
+  #per person priors
+  for (cop in 1:PD){
+    for (com in 1:CITY){
+      N[cop,com] ~ dcat(p[cop,com,])
+      for (i in 1:nmax){
+        p[cop,com,i] <-1/nmax
+      }
+ 
+      sigma[cop, com] ~ dunif(0,1)
+      theta[com,cop] ~ dnorm(delta[com], pow(sigma[cop, com], -2))T(0,1)
+      y[cop,com] ~ dbin(theta[com,cop], N[cop,com])
+      
+    }
+  }
+  
+  for (com in 1:CITY){ 
+    delta[com] ~ dunif(0,1) 
+  }
+}
