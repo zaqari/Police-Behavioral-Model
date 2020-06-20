@@ -9,7 +9,7 @@ Last note: all of these are 100% free to use! If you want to take these scripts,
 ## Data Structure
 Let's say you want to swap out my made up data with real data. How would you do that? So the models all assume that you have a known number of officers, with a known number of complaints levied against them per each of the communities that they have been on patrol in to start. This is represented in how the data is structured. What you would need to do to swap in your own data would be to assign a data.frame() that has one row per each officer, with one column for as many communities as you're interested in. So, for example . . . 
 
-| Officer #   | Community 1 | Community 2 | Community 3 | . . . | Community N |
+| Officer #   | Community 1 | Community 2 | Community 3 | . . . | Community Z |
 |-------------|-------------|-------------|-------------|-------|-------------|
 | 001         | 0           | 1           | 5           | . . . | 3           |
 | 002         | 2           | 3           | 6           | . . . | 2           |
