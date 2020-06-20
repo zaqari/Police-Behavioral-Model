@@ -1,0 +1,10 @@
+# Inferring a Rate
+model{
+  #per person priors
+  for (cop in 1:PD){
+    for (com in 1:CITY){
+      theta[com,cop] ~ dunif(0,1)
+      y[cop,com] ~ dbin(theta[com,cop],N[cop])
+    }
+  }
+}
