@@ -7,7 +7,7 @@ I've included five different models that one can apply to this question, that pe
 Last note: all of these are 100% free to use! If you want to take these scripts, play with them, apply them to other problems, you by all means can do so! If you want any help in implementing these models, feel free to reach out to me at zrosen@uci.edu.
 
 ## Data Structure
-Let's say you want to swap out my made up data with real data. How would you do that? So the models all assume that you have a known number of officers, with a known number of complaints levied against them per each of the communities that they have been on patrol in to start. This is represented in how the data is structured. What you would need to do to swap in your own data would be to assign a data.frame() that has one row per each officer, with one column for as many communities as you're interested in. So, for example . . . 
+Let's say you want to swap out my made up data with real data. How would you do that? So the models all assume that you have a known number of officers, with a known number of complaints levied against them per each of the communities that they have been on patrol in to start. This is represented in how the data is structured. What you would need to do to swap in your own data would be to assign a data frame or matrix that has one row per each officer, with one column for as many communities as you're interested in. So, for example . . . 
 
 | Officer #   | Community 1 | Community 2 | Community 3 | . . . | Community Z |
 |-------------|-------------|-------------|-------------|-------|-------------|
